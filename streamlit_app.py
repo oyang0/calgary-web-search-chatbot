@@ -74,7 +74,7 @@ if prompt := st.chat_input("What is up?"):
             }
         }],
         include=["web_search_call.action.sources"],
-        tool_choice={"type": "required"},
+        tool_choice="required",
     )
 
     def write_stream():
